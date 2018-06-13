@@ -17,11 +17,11 @@ node {
 	            sh "echo 'shell scripts to run unit tests...'"
 	        },
 	        'integration': {
-	            sh "echo 'shell scripts to run integration tests...'"
+	            sh "echo 'shell scripts to run the integration tests...'"
 	        }
         }
       	stage ('Deploy') {
-            sh "echo 'shell scripts to deploy to server...'"
+            sh "echo 'shell scripts to deploying to the server...'"
       	}
     } catch (err) {
         currentBuild.result = 'FAILED'
